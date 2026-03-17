@@ -20,6 +20,11 @@ st.markdown(
         background-attachment: fixed;
     }
 
+    /* FORCE TEXT COLOR TO BLACK */
+    h1, h2, h3, h4, h5, h6, p, div, span, label {
+        color: black !important;
+    }
+
     </style>
     """,
     unsafe_allow_html=True
