@@ -1,0 +1,121 @@
+/* GLOBAL BACKGROUND */
+body {
+    background: linear-gradient(120deg,#1f4037,#99f2c8);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* TITLE */
+h1 {
+    text-align:center;
+    font-weight:700;
+    color:#0f172a;
+}
+
+/* SIDEBAR */
+/* SIDEBAR BACKGROUND */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg,#0f172a,#1e293b);
+}
+
+/* SIDEBAR TEXT */
+section[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+/* SIDEBAR PAGE LINKS */
+section[data-testid="stSidebarNav"] a {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+/* SIDEBAR LINK HOVER */
+section[data-testid="stSidebarNav"] a:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+/* SIDEBAR TITLE */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #00e5ff !important;
+}
+
+/* GLASS CARDS */
+[data-testid="metric-container"] {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* HOVER EFFECT */
+[data-testid="metric-container"]:hover {
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
+
+/* BUTTONS */
+.stButton>button {
+    background: linear-gradient(90deg,#667eea,#764ba2);
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:10px 25px;
+    font-weight:bold;
+}
+
+/* BUTTON HOVER */
+.stButton>button:hover {
+    background: linear-gradient(90deg,#ff758c,#ff7eb3);
+    transform:scale(1.05);
+}
+
+/* TABLES */
+[data-testid="stDataFrame"] {
+    border-radius:10px;
+}
+
+/* SUCCESS BOX */
+.stSuccess {
+    background: rgba(0,255,120,0.2);
+    border-radius:10px;
+}
+
+/* WARNING BOX */
+.stWarning {
+    background: rgba(255,200,0,0.2);
+}
+
+/* ERROR BOX */
+.stError {
+    background: rgba(255,0,0,0.2);
+}
+/* DASHBOARD KPI CARDS */
+
+[data-testid="metric-container"] {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+[data-testid="metric-container"]:hover {
+    transform: translateY(-4px);
+    transition: 0.2s ease;
+}
+/* Glow animation for title */
+h1 {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00e5ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00e5ff;
+    }
+}
